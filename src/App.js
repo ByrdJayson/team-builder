@@ -55,7 +55,7 @@ function App() {
           update={updateForm}
           submit={submitForm}/>
           {team.map(member => {
-            return <Member member={member}/>
+            return <Member key={member.name} member={member}/>
           })}
         </div>
     </div>
