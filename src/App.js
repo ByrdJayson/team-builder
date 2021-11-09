@@ -37,6 +37,8 @@ function App() {
     setTeam([newMember, ...team]);
     console.log(newMember);
     console.log(team);
+
+    setFormValues(initialFormValues);
     
   }
 
