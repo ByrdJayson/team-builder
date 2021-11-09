@@ -33,7 +33,7 @@ export default function TeamForm(props){
                     <option value="Team Leader">Team Leader</option>
                     <option value="Design">Design</option>
                 </select>
-                <button type='submit'>Submit</button>
+                <button disabled={!values.name || !values.email || !values.role} type='submit'>Submit</button>
                 
             </form>
         </div>
