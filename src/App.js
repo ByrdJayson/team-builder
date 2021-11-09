@@ -52,7 +52,9 @@ function App() {
           values={formValues}
           update={updateForm}
           submit={submitForm}/>
-          <Member />
+          {team.map(member => {
+            return <Member member={member}/>
+          })}
         </div>
     </div>
   );
