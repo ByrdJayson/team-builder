@@ -7,7 +7,7 @@ export default function TeamForm(props){
     const { onSubmit } = props;
     return (
         <div className="form">
-            <form>
+            <form onSubmit={onSubmit}>
                 <input name='name' type="text" placeholder='Name' />
                 <input type="email" name='email' placeholder='Email' />
                 <select name="role" id="role">
@@ -17,7 +17,7 @@ export default function TeamForm(props){
                     <option value="Team Leader">Team Leader</option>
                     <option value="Design">Design</option>
                 </select>
-                <button type='submit' onSubmit={onSubmit}>Submit</button>
+                <button type='submit'>Submit</button>
                 
             </form>
         </div>

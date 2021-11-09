@@ -5,8 +5,9 @@ import './App.css';
 function App() {
   const [team, setTeam] = useState('');
 
-  function onSubmit(evt){
+  const onSubmit = (evt) => {
     evt.preventDefault();
+  
 
   }
 
