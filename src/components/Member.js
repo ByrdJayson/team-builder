@@ -7,6 +7,8 @@ export default function Member(props){
     const StyledMember = styled.div`
         border: 3px solid black;
         margin-top: 2rem;
+        
+        
     `
 
     const { name, email, role } = props.member;
